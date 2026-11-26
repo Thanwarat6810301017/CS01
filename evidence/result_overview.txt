@@ -1,0 +1,63 @@
+=== สรุปภาพรวม IIS Log (10 ไฟล์, 20,819 บรรทัด) ===
+
+--- 1. Top 10 Client IPs ---
+  ::1                  : 1,440 requests
+  10.104.1.74          : 506 requests
+  10.114.0.155         : 421 requests
+  10.104.0.91          : 395 requests
+  49.49.243.53         : 382 requests
+  192.168.33.21        : 365 requests
+  10.104.1.86          : 349 requests
+  192.168.33.29        : 340 requests
+  192.168.33.45        : 314 requests
+  10.104.0.60          : 282 requests
+
+--- 2. HTTP Status Codes ---
+  200        : 16,586
+  404        : 2,147
+  303        : 1,509
+  302        : 567
+  500        : 7
+  304        : 3
+
+--- 3. HTTP Methods ---
+  GET        : 17,060
+  POST       : 3,759
+
+--- 4. Top 15 Requested URIs ---
+    3221 | /webname/DXR.axd
+    1804 | /webname/UIK/PageResource.aspx
+    1440 | /AppName/CommandServices.asmx
+    1387 | /webname/Main/MainMenu.aspx
+    1156 | /webname/DXXRDV.axd
+     564 | /webname/Main/login.aspx
+     484 | /webname/Main/Home.aspx
+     412 | /webname/Main/MIS/Staff/Applications/StaffAttRequestData.aspx
+     308 | /webname/WebResource.axd
+     269 | /webname/UIK/jQuery/appleSearch/main.css
+     260 | /favicon.ico
+     252 | /webname/ScriptResource.axd
+     235 | /webname/Main/res/Main.css
+     222 | /webname/UIK/images/ErrorExceptionIcon.png
+     219 | /webname/Main/images/logo_l.jpg
+
+--- 5. Top 10 User-Agents ---
+   13576 | Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)
+    1440 | Mozilla/4.0+(compatible;+MSIE+6.0;+MS+Web+Services+Client+Protocol+4.0.30319.420
+     770 | Mozilla/5.0+(Linux;+Android+10;+K)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome
+     757 | Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)
+     663 | Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)
+     556 | Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_15_7)+AppleWebKit/605.1.15+(KHTML,+lik
+     289 | Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:145.0)+Gecko/20100101+Firefox/145.0
+     214 | Mozilla/5.0+(iPhone;+CPU+iPhone+OS+18_6_2+like+Mac+OS+X)+AppleWebKit/605.1.15+(K
+     208 | Mozilla/5.0+(iPhone;+CPU+iPhone+OS+15_6_1+like+Mac+OS+X)+AppleWebKit/605.1.15+(K
+     204 | Mozilla/5.0+(iPhone;+CPU+iPhone+OS+18_7+like+Mac+OS+X)+AppleWebKit/605.1.15+(KHT
+
+--- 6. กลุ่มพฤติกรรมต้องสงสัยที่ตรวจพบ ---
+
+[*] HTTP 500 (พบทั้งหมด 7 รายการ) — ตัวอย่าง 5 บรรทัดแรก:
+    u_ex251120.log:388 | 192.168.33.29 | GET /webname/Main/login.aspx | Status:500 | UA:Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/142.0.0.0+Safari/537.36
+    u_ex251121.log:464 | 162.120.184.62 | GET /webname/Main/login.aspx | Status:500 | UA:Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/141.0.0.0+Safari/537.36
+    u_ex251125.log:606 | 10.104.0.63 | GET /webname/DXXRDV.axd?actionKey=exportTo&arg=%7B%22documentId%22%3A%22a197b314383249ebbc2e8e7284c7842b%22%2C%22exportOptions%22%3A%22%7B%5C%22Html%5C%22%3A%7B%5C%22%40EmbedImagesInHTML%5C%22%3A%5C%22true%5C%22%7D%7D%22%2C%22format%22%3A%22pdf%22%2C%22editingFieldValues%22%3A%5B%5D%7D | Status:500 | UA:Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_15_7)+AppleWebKit/605.1.15+(KHTML,+like+Gecko)+Version/18.6+Safari/605.1.15
+    u_ex251127.log:471 | 10.124.1.29 | GET /webname/Main/MIS/Staff/Applications/RepSlip.aspx?id=10104&periodid=256803&salarytype=9 | Status:500 | UA:Mozilla/5.0+(iPhone;+CPU+iPhone+OS+17_5_1+like+Mac+OS+X)+AppleWebKit/605.1.15+(KHTML,+like+Gecko)+Version/17.5+Mobile/15E148+Safari/604.1
+    u_ex251127.log:481 | 10.124.1.29 | GET /webname/Main/MIS/Staff/Applications/RepSlip.aspx?id=10104&periodid=256803&salarytype=9 | Status:500 | UA:Mozilla/5.0+(iPhone;+CPU+iPhone+OS+17_5_1+like+Mac+OS+X)+AppleWebKit/605.1.15+(KHTML,+like+Gecko)+Version/17.5+Mobile/15E148+Safari/604.1
